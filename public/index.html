@@ -15,20 +15,41 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+   
+    <div id="headDiv">
+      <h1> Clicky Game!</h1>
+      <p>Click an image to begin!
+      </p>
+      <div id="Score"><h3>Score:</h3> <span id="tarScore"></span></div> <!--fix this in js-->
+      <div id="highscore">High Score: <span id="hScore"></span></div>
+  </div>
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+  <!--images for the game-->
+  <div id="images">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/luke.jpg" alt="" id="Luke" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/leia.jpg" alt="" id="Leia" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/rey.jpg" alt="" id="rey" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/jarjarBinks.jpg" alt="" id="jar" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/hanSolo.jpg" alt="" id="solo" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/vader.jpg" alt="" id="vader" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/droids.jpg" alt="" id="droids" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/c3po.jpg" alt="" id="c3po" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/r2d2.jpg" alt="" id="r2d2" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/boba.jpg" alt="" id="boba" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/kylo.jpg" alt="" id="kylo" height="80px" width="100px">
+      <img src="C:/Users/loren/Desktop/ClickyGame/assets/images/porg.jpg" alt="" id="porge" height="80px" width="100px">
+  </div>
+  <br>
+
+  <div id="currentScore">Your current score: <span id="currentScore"></span></div>
+  <div id="scorecard"></div>
+
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
