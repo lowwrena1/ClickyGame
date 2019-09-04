@@ -1,0 +1,97 @@
+Problems We have to Solve...
+
+1) Component Design
+        i.e.
+        - App
+            - Header
+		- Message
+                - GameScore
+            - Instructions
+            - Cards
+            - Footer
+
+    Class vs Function Components:
+
+        - Class component is typically where you have your main logic
+        - Function components just hold dummy data/content
+
+    Data - Array of Profile Cards
+    [
+        {
+            image: image1.jpg
+isClicked: false
+            ...
+            you'll most likely need more stuff
+        },
+        {
+            image: image2.jpg
+isClicked: false
+            ...
+            you'll most likely need more stuff
+        },
+    ]
+
+2) Understand Rules of the game. Did we click on the same image game?
+
+    At this point you should be able to view your picture cards and maybe some hardcode values for the score to serve as placeholders
+    
+    - Design UI layout using component design
+    - App should render your array of profile cards
+
+3) Logic when you lose.
+
+- Given a set of cards if the user clicks on the same picture, you lose!
+
+    Each card should have a boolean letting you know the status if it was clicked
+    Something like isClicked: true/false
+
+    note: 
+        1) when you loose you reset score to 0, but KEEP top score (in other words do nothing to top score)
+
+            - score: is current game
+
+            - top score: is all games played within session
+
+        2) Shuffle Cards
+ 	    - Reference Spongebob game
+            - Search the web for tactics on how to shuffle an array
+function shuffle(array) {
+array.sort(() => math.random() -0.5);
+
+//not complete*************
+ler arr ' [{'name': 'calvin'}, 2,3,4,5,6,
+
+            - I rcommend doing this outside of react. Once you have it working using a simple array like
+
+                [1,2,3,4,5] 
+                that becomes something like...
+                [3, 2, 5, 1, 4]
+            
+                -Be sure to test out various shuffles you can even create an array of objects and see if it actually shuffles it rather than just testing it out on numbers
+
+                -Then add this logic into your react app
+
+        3) Notify user that they lost
+		-Given a set of cards if the user clicks on teh same picture, you lose!
+ 		
+        4) Shake cards - can use javascript (hard way) or pure css (easy way)
+        https://www.w3schools.com/howto/howto_css_shake_image.asp
+ **** https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_shake ****
+            - css (easy way): take a look at animate, transition
+
+            - try to create your own css class that shakes the card when applying the classname
+
+ ,           - I recommend doing this outside of react. Once you have it working using simple html and css then move that logic into your react component.
+4) Logic when you win.
+
+    Each card should have a boolean letting you know the status if it was clicked
+    Something like isClicked: true/false
+****true = lose (because you have already clicked it)  false = win (because you have yet to click the card)********
+
+- Given a set of cards if the user has never clicked on that card, you win!
+    
+    note: 1) when you win
+        - score 
+            increment score++
+        - top score
+            if score is greater than top score, then we increment topscore++
