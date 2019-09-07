@@ -1,10 +1,10 @@
 import React from "react"; 
-import "./Header.css";
+//import "./Header.css";
 const Header = props => (
 <div className="header">
     <div className="title">{props.children}</div> 
-    <div className="scores"> 
-    Score: {props.score} Highscore: {props.highscore} 
+    <div className="scores">
+    <p>Score: {props.score} Highscore: {props.highscore}</p>
     </div> 
     
 
@@ -12,4 +12,4 @@ const Header = props => (
  </div>
 );
 
-export default Header; 
+export default Header;

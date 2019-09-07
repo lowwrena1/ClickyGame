@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "image": "./assets/images/boba.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "image": "./assets/images/c3po.jpg",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "image": "./assets/images/droids.jpg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "image": "./assets/images/hanSolo.jpg",
+        "clicked": false
+    }
+    {
+        "id": 5,
+        "image": "./assets/images/jarjarBinks.jpg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "image": "./assets/images/kylo.jpg",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "image": "./assets/images/luke.jpg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "image": "./assets/images/leia.jpg",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "image": "./assets/images/r2d2.jpg",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "image": "./assets/images/porg.jpg",
+        "clicked": false
+    }
+    {
+        "id": 11,
+        "image": "./assets/images/rey.jpg",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "image": "./assets/images/vader.jpg",
+        "clicked": false
+    },
+]
