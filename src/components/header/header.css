@@ -1,0 +1,17 @@
+.header {
+    background-color:rgb(26,35,52);
+    width: 100%;
+   
+    font-size: 3rem;
+    
+    color: white;
+    margin-bottom: 50px;
+  }
+.scores {
+    margin-right: 10px;
+    float:right;
+}
+.title {
+   
+    float:left;
+}

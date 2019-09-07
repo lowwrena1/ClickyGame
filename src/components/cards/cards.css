@@ -1,0 +1,19 @@
+    
+.card {
+    height: 150px;
+    width: 150px;
+    border: 3px green;
+    margin: 1rem;
+    position: relative;
+    float: left;
+}
+
+.card > .img-container {
+    height: 100%;
+    overflow: hidden;
+    background: gray ;
+}
+
+.card > .img-container > img {
+    height: 100%;
+} 
