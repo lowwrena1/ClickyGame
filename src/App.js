@@ -35,7 +35,7 @@ class App extends Component {
   //if clicked is true (not zero) run game over
   handleClick = id => {
     
-    this.state.Cards.find((clicked, i) => {
+    this.state.Cards.find((clicked, (i) => {
       if (clicked.id === id){
         if(Cards[i].count === 0){
           Cards[i].count = Cards[i].count + 1; 
