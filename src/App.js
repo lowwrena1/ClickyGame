@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Cards from "./components/cards/cards";
-import Wrapper from "./components/wrapper/wrapper"; //why don't these frunction thru?
+import Wrapper from "./components/wrapper/wrapper"; 
 import Header from "./components/header/header";
 import './App.css';
 
@@ -10,15 +10,17 @@ class App extends Component {
     score: 0,
     highscore:0
   };
-// Game over function tells the score info that if the score is higher than past score than update that to the new high score!
+  //update score
+  
+  //alert that the game is over with score 
   gameOver= () => {
     if(this.state.score >this.state.highscore){
       this.setState({highscore: this.state.score}, function(){
         console.log(this.state.highscore)
       });
-    } //start game at zero
-    this.state.Cards.forEach( Card=> {
-      Card.count = 0;
+    }
+    this.state.cards.forEach( card=> {
+      card.count = 0;
       
     });
     alert(`Game Over :(\nscore: ${this.state.score}`); 
@@ -28,9 +30,11 @@ class App extends Component {
 
         
     
-//function for click counts
-// if card is hasn't been clicked and the count is 0 than add 1 point and shuffle  the cards
+//function to handle the click counts
+// if card clickcount is 0 add 1 and then shuffle 
+  //if clicked is true (not zero) run game over
   handleClick = id => {
+    
     this.state.Cards.find((clicked, i) => {
       if (clicked.id === id){
         if(Cards[i].count === 0){
@@ -40,7 +44,7 @@ class App extends Component {
 
           }); 
 
-          this.state.Cards.sort(() => Math.random() - 0.5)
+          this.state.cards.sort(() => Math.random() - 0.5)
           return true;
         } else {
           this.gameOver();
@@ -55,12 +59,12 @@ class App extends Component {
       <Wrapper>
         
         <Header score={this.state.score} highscore={this.state.highscore}> Clicky Game </Header>
-        {this.state.Cards.map(Cards => (
+        {this.state.cards.map(cards => (
           <Cards
           handleClick={this.handleClick}
-          id={Cards.id}
-          key={Cards.id}
-          image={Cards.image}
+          id={cards.id}
+          key={cards.id}
+          image={cards.image}
           />
         ))}
      
